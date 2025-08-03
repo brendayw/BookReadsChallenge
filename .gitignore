@@ -1,25 +1,10 @@
-# Maven directories
+HELP.md
 target/
-.mvn/wrapper/
-
-# IDEA project files
-.idea
-*.iws
-*.iml
-*.ipr
-
-# VS Code project files
-.vscode/
-
-# Spring Boot Maven Wrapper
-mvnw
-mvnw.cmd
-
-# Maven wrapper jar file (optional)
 .mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
 
-# Other IDEs
-# STS
+### STS ###
 .apt_generated
 .classpath
 .factorypath
@@ -28,14 +13,21 @@ mvnw.cmd
 .springBeans
 .sts4-cache
 
-# Gradle
-.nb-gradle/
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
 build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 
-# Ignore other common IDEs (NetBeans)
-nbproject/private/
-nbbuild/
-dist/
-nbdist/
+### VS Code ###
+.vscode/
