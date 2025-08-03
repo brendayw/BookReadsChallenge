@@ -58,9 +58,9 @@ public class Principal {
                 case 4:
                     obtenerAutoresVivos();
                     break;
-//                case 5:
-//                    obtenerLibrosPorIdioma();
-//                    break;
+                case 5:
+                    obtenerLibrosPorIdioma();
+                    break;
                 case 0:
                     System.out.println("Cerrando la app...");
                 default:
@@ -137,6 +137,26 @@ public class Principal {
     }
 
     private void obtenerLibrosPorIdioma() {
+        try {
+            System.out.print("Ingrese el idioma para buscar libros: ");
+            System.out.print("\nes - español");
+            System.out.print("\nen - ingles");
+            System.out.print("\npt - portugues");
+            System.out.print("\nfr - frances \n");
+            var idioma = input.nextLine();
+
+            List<LibroDTO> idiomaLibro = libroService.obtenerLibrosPorIdioma(idioma);
+            if (idiomaLibro.isEmpty()) {
+                System.out.println("No hay libros en " + idioma);
+                return;
+            }
+            idiomaLibro.forEach(l -> System.out.println(formaterLibro(l)));
+        } catch (InputMismatchException e) {
+            System.out.println("Opcion no valida, elija entre: es - en - pt - fr");
+            input.nextLine();
+        } catch (Exception e) {
+            System.out.println("Error al obtener libros: " + e.getMessage());
+        }
     }
 
     //metodo que formatea libro

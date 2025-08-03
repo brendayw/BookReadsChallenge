@@ -49,11 +49,11 @@ public class LibroService {
     public List<LibroDTO> obtenerTodosLosLibros() {
         return convierteDatos(repository.findAll());
     }
-    //obtener por autor
 
-    //obtener autores vivos
-
-    //obtener
+    //obtener libros por idioma
+    public List<LibroDTO> obtenerLibrosPorIdioma(String idioma) {
+        return convierteDatos(repository.findByIdioma(idioma));
+    }
 
     //metodo para convertir datos
     public List<LibroDTO> convierteDatos(List<Libro> libros) {
