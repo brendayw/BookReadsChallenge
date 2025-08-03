@@ -2,7 +2,6 @@ package com.ar.BookReads.principal;
 
 import com.ar.BookReads.dto.AutorDTO;
 import com.ar.BookReads.dto.LibroDTO;
-import com.ar.BookReads.model.DatosLibro;
 import com.ar.BookReads.model.Libro;
 import com.ar.BookReads.service.ApiService;
 import com.ar.BookReads.service.AutorService;
@@ -11,7 +10,6 @@ import org.springframework.stereotype.Component;
 
 import java.util.InputMismatchException;
 import java.util.List;
-import java.util.Optional;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 

@@ -61,5 +61,4 @@ public class LibroService {
                 .map(l -> new LibroDTO(l.getId(), l.getTitulo(), l.getIdioma(), l.getNumeroDescargas(), l.getAutor()))
                 .collect(Collectors.toList());
     }
-
 }

@@ -6,7 +6,6 @@ import com.ar.BookReads.repository.AutorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -27,7 +26,6 @@ public class AutorService {
     }
 
     //metodos
-
     public List<AutorDTO> convierteDatos(List<Autor> autores) {
         return autores.stream()
                 .map(a -> new AutorDTO(a.getId(), a.getNombre(), a.getFechaNacimiento(), a.getFechaFallecimiento(), a.getLibros()))

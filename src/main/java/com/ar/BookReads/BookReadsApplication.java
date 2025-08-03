@@ -1,12 +1,6 @@
 package com.ar.BookReads;
 
 import com.ar.BookReads.principal.Principal;
-import com.ar.BookReads.repository.AutorRepository;
-import com.ar.BookReads.repository.LibroRepository;
-import com.ar.BookReads.service.ApiService;
-import com.ar.BookReads.service.AutorService;
-import com.ar.BookReads.service.LibroService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -11,7 +11,7 @@ public class Libro {
 
     @Column(unique = true)
     private String titulo;
-    private String idioma; //podria ser un enum?
+    private String idioma;
     private Double numeroDescargas;
 
     @ManyToOne

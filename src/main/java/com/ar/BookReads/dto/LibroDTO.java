@@ -7,6 +7,5 @@ public record LibroDTO(
         String titulo,
         String idioma,
         Double numeroDescargas,
-        Autor autor
-) {
+        Autor autor) {
 }
